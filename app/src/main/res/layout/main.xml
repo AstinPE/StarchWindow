@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sj.astin.multimanager.activity.MainActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_margin="8dp"
+        android:gravity="center|center"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:padding="24dp"
+            android:textColor="#000000"
+            android:gravity="left|center_horizontal"
+            android:text="Floating Window Service 작동" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp"
+            android:layout_gravity="right|center_horizontal"
+            android:id="@+id/switch1"
+            android:switchPadding="20dp"
+            android:checked="false"/>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:padding="32dp">
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Floating Window 설정"
+                android:id="@+id/setting_button"
+                android:onClick="onSettingsClick"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:padding="32dp">
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="업데이트 센터"
+                android:id="@+id/addon_button"
+                android:layout_below="@+id/setting_button"
+                android:onClick="onUpdateClick"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
+
