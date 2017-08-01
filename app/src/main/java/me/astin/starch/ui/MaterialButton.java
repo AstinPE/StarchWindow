@@ -79,9 +79,9 @@ public class MaterialButton extends Button implements View.OnTouchListener {
 		}
 	}
 	
-	public void setBackgroundDrawable(Drawable drawable, int l, int t, int r, int b) {
+	public void setBackgroundDrawable(Drawable drawable, int[] pad) {
 		LayerDrawable layerDrawable = new LayerDrawable(new Drawable[] {drawable});
-		layerDrawable.setLayerInset(0, l, t, r, b);
+		layerDrawable.setLayerInset(0, pad[0], pad[1], pad[2], pad[3]);
 		super.setBackgroundDrawable(layerDrawable);
 		this.background = layerDrawable;
 	}

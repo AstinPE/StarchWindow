@@ -31,6 +31,7 @@ import me.astin.starch.ui.MaterialButton;
 import me.astin.starch.ui.RippleDrawable;
 import me.astin.starch.ui.FloatingButton;
 import me.astin.starch.ui.MyColor;
+import me.astin.starch.ui.FlatToast;
 
 public class MainActivity extends AppCompatActivity {
 	public static int OVERLAY_PERMISSION_REQ_CODE = 1;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-		
+        
 		final StarchWindow window = new StarchWindow();
 			
         head_enable_switch = (Switch) findViewById(R.id.switch1);
